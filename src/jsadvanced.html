@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JS Advanced</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ </head>
+
+<body>
+  <div class="container">
+    <div id="nav-placeholder"></div>    
+    
+    <h1 center id="message">JavaScript: Advanced from Pluralsight.</h1>
+  
+    <div id=test></div>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Description</th>
+          <th scope="col">Example</th> 
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Objects.Create()</td>
+          <td >let person = Object.create{ Object.prototype....</td>         
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Using Constructor functions</td>
+          <td>"this" keyword always refer to object. <br>
+            function Person() { firstName: };<br>
+            let person - new Person{ ...</tr></td>         
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Object.assign</td>
+          <td  >merge properties from  objects to first one or Object.assingn({}, object1 , object2)</td>         
+        </tr>
+
+        <tr>
+          <th scope="row">4</th>
+          <td>Equality objects</td>
+          <td  >=== most vs object.is()
+              <ul>
+                  <li>different NaN != NaN in ===, in object.is That will be equal</li>
+              </ul>
+          </td>         
+        </tr>
+
+        <tr>
+          <th scope="row">5</th>
+          <td>Writable attribute</td>
+          <td> Define attribute => Object.defineAttribute</td>         
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Prototype</td>
+          <td  >Every function has prototype object. Object has __proto__. </td>         
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Instance vs prototype</td>
+          <td>prototype changing has impact for each instance. 
+              HAsOnwProperty.
+          </td>         
+        </tr>
+
+        <tr>
+          <th scope="row">8</th>
+          <td>Javascript classes</td>
+          <td> class Person { </br>
+            constructor{ </br> </td>         
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>BJava Script get and set  </td>
+          <td> get fullName() {} ...</td>         
+        </tr>  
+        <tr>
+          <th scope="row">10</th>
+          <td>Js inheritance</td>
+          <td> use "Extends" base and remeber about super()</td>         
+        </tr>
+       
+      </tbody>
+    </table>
+
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("nav.html");
+      });
+      </script>
+           <script src="/js/utils.js"></script>
+       <script src="/js/functions.js"></script>
+  
+  </div>
+</body>
+ </html>

@@ -4,6 +4,7 @@
 <head>
   <title>JS Starter</title>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,110 +15,9 @@
 
 <body>
   <div class="container">
-    <h1 center id="message">JavaScript: Getting Started. Collected from Pluralsight.</h1>
-  
-     
-    <table class="table">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Description</th>
-          <th scope="col">Example</th> 
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Scripts order is important.</td>
-          <td >None</td>         
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Case sensitive - YES.</td>
-          <td  >None</td>         
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Comments in code</td>
-          <td  >// or /* */</td>         
-        </tr>
-
-        <tr>
-          <th scope="row">4</th>
-          <td>Declare variable</td>
-          <td  >let - for block scope, var - function scope</td>         
-        </tr>
-
-        <tr>
-          <th scope="row">5</th>
-          <td>Variable naming</td>
-          <td  >wrong - 99name, </td>         
-        </tr>
-        <tr>
-          <th scope="row">6</th>
-          <td>Const variable</td>
-          <td  >Const has to have value during declaration. Cannot be changed - error occur. </td>         
-        </tr>
-        <tr>
-          <th scope="row">7</th>
-          <td>The var keyword</td>
-          <td  >Const has to have value during declaration. Cannot be changed - error occur. </td>         
-        </tr>
-
-        <tr>
-          <th scope="row">8</th>
-          <td>Numbers 2.1 + 2.3 = </td>
-          <td> <div id="numberSum"></div></td>         
-        </tr>
-        <tr>
-          <th scope="row">9</th>
-          <td>Boolean type </td>
-          <td> False: false, 0 , "" or empty string, null, undefined, NaN !!! True - others:) </td>         
-        </tr>  
-        <tr>
-          <th scope="row">10</th>
-          <td>Comparing === vs == </td>
-          <td> === check value and type, == check only value </td>         
-        </tr>
-        <tr>
-          <th scope="row">11</th>
-          <td>++price , price++</td>
-          <td>  ++price change and display, price++ display after change </td>         
-        </tr>
-
-        <tr>
-          <th scope="row">12</th>
-          <td>symbols</td>
-          <td>Hide props in object.</td>         
-        </tr>
-
-        <tr>
-          <th scope="row">12</th>
-          <td>Add event</td>
-          <td>button.AddEventListener</td>         
-        </tr>
-        <tr>
-          <th scope="row">13</th>
-          <td>Global scope</td>
-          <td>One const object which contain props which should be available global.</td>         
-        </tr>
-        <tr>
-          <th scope="row">14</th>
-          <td>use strict</td>
-          <td>To avoid  add prop to window object ex. productId=1; then window.productId</td>         
-        </tr>
-        <tr>
-          <th scope="row">15</th>
-          <td>Slice(1,2) Array  values ['a','b', 'c' , 'd']  let array2  = array.slice(1,2) </td>
-          <td><div id ="sliceArray"></div></td>         
-        </tr>
-        <tr>
-          <th scope="row">16</th>
-          <td>Splice(1,1) Array  values ['a','b', 'c' , 'd'] </td>
-          <td><div id ="spliceArray"></div></td>         
-        </tr>
-      </tbody>
-    </table>
+    <div id="nav-placeholder"></div>  
+    
+   
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -127,6 +27,11 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/utils.js"></script>
     <script src="/js/script.js"></script>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("nav.html");
+      });
+      </script>
   </div>
 </body>
  </html>
